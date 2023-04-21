@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mask Detection</title>
+  </head>
+  <body>
+    <h1>Upload and Process Image</h1>
+    <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept="image/*">
+      <br><br>
+      <input type="submit" value="Upload and Process">
+    </form>
+  </body>
+</html>
